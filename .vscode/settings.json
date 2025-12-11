@@ -1,0 +1,46 @@
+{
+  // 저장 시 자동 포맷팅
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
+  // 기본 포맷터를 Prettier로 설정
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 파일 타입별 포맷터 설정
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ESLint 자동 수정
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // ESLint 설정
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+  ],
+
+  // 들여쓰기 설정
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+
+  // 파일 끝 빈 줄 자동 추가
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true
+}

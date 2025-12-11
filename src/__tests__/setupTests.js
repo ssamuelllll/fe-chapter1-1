@@ -23,6 +23,3 @@ afterEach(() => {
   localStorage.clear();
   document.body.innerHTML = '';
 });
-
-
-

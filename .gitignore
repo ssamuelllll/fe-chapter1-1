@@ -18,8 +18,10 @@ build/
 .env.production.local
 
 # IDE files
-.vscode/
-.idea/
+.idea/*
+!.idea/prettier.xml
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
 *.swp
 *.swo
 
