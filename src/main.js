@@ -40,8 +40,31 @@ const router = {
 
     // const page = routes[path];
     // app.innerHTML = page ? page() : '';
-    const app = document.getElementById('app');
+
+    // const app = document.getElementById('app');
+    // const route = routes[window.location.pathname] || (() => NotFoundPage);
+    // app.innerHTML = route();
+
+    // const app = document.getElementById("app");
+    // let path = window.location.pathname;
+    // if (path === "/") {
+    //   path = "/";
+    //   history.replaceState(null, null, path);
+    // }
+    // const route = routes[path];
+    // app.innerHTML = route ? route() : "<h1>404</h1>";
+
+    let app = document.getElementById('app');
+
+    // 테스트용도로 생성
+    if (!app) {
+      app = document.createElement('div');
+      app.id = 'app';
+      document.body.appendChild(app);
+    }
+
     const route = routes[window.location.pathname] || (() => NotFoundPage);
+
     app.innerHTML = route();
 
     setActiveNav();
@@ -1905,6 +1928,7 @@ function setActiveNav() {
 
 document.addEventListener('click', e => {
   const link = e.target.closest('[data-link]');
+
   if (!link) {
     return;
   }
