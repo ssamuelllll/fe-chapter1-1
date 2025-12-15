@@ -43,6 +43,8 @@ const router = {
     const app = document.getElementById('app');
     const route = routes[window.location.pathname] || (() => NotFoundPage);
     app.innerHTML = route();
+
+    setActiveNav();
   }
 };
 
@@ -1803,7 +1805,7 @@ const nav = () => `
       </div>
 
       <nav class='sidebar-nav-v2'>
-        <button class='nav-item-v2 active' href="/" data-link>
+        <button class='nav-item-v2' href="/" data-link>
           <svg
             width='20'
             height='20'
@@ -1858,6 +1860,10 @@ const nav = () => `
       </nav>
 
       <div class='sidebar-footer-v2'>
+        <button type='submit' class='btn-primary-v2'>
+          로그인
+        </button>
+        <!--
         <button class='user-info-v2'>
           <div class='user-name-v2'>김의사</div>
           <div class='user-role-v2'>의사</div>
@@ -1874,6 +1880,7 @@ const nav = () => `
           </svg>
           <span>로그아웃</span>
         </button>
+        -->
       </div>
     </div>
 `;
@@ -1885,6 +1892,16 @@ const Main = () => `
 
 window.router = router;
 globalThis.router = router;
+
+function setActiveNav() {
+  const currentPath = window.location.pathname;
+
+  document.querySelectorAll('.nav-item-v2').forEach(item => {
+    const path = item.getAttribute('href');
+
+    item.classList.toggle('active', path === currentPath);
+  });
+}
 
 document.addEventListener('click', e => {
   const link = e.target.closest('[data-link]');
