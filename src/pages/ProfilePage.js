@@ -1,20 +1,6 @@
 export default function ProfilePage() {
   return `
-<div class='page profile-page-v2'>
-  <div class='dashboard-container-v2'>
 
-
-    <div class='main-content-v2'>
-      <div class='content-header-v2'>
-        <button class='tab-button-v2 active'>
-          <span>프로필 설정</span>
-          <svg width='16' height='16' viewBox='0 0 16 16' fill='none'>
-            <path d='M8 4L12 8L8 12' stroke='#155DFC' stroke-width='1.33' />
-          </svg>
-        </button>
-      </div>
-
-      <div class='content-body-v2'>
         <div class='page-header-v2'>
           <div>
             <h2 class='page-title-v2'>프로필 설정</h2>
@@ -141,9 +127,6 @@ export default function ProfilePage() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 `;
 }

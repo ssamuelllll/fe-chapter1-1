@@ -1,6 +1,5 @@
 export default function Nav() {
   return `
-    <div class='sidebar-v2' id="Nav" >
       <div class='sidebar-header-v2'>
         <h2 class='sidebar-title-v2'>MediGuard LIS</h2>
         <p class='sidebar-subtitle-v2'>차세대 환자 안전 플랫폼</p>
@@ -44,7 +43,7 @@ export default function Nav() {
           </svg>
           <span>검사 결과 보기</span>
         </button>
-        <button class='nav-item-v2'href="/profile" data-link id="btnNavProfile">
+        <button class="nav-item-v2 "  href="/profile" data-link id="btnNavProfile" >
           <svg
             width='20'
             height='20'
@@ -82,6 +81,5 @@ export default function Nav() {
           <span>로그아웃</span>
         </button>
       </div>
-    </div>
   `;
 }

@@ -4,9 +4,7 @@ export default function TestResultViewPage() {
   <div class="dashboard-container-v2">
 
     <div class="main-content-v2">
-      <div class="content-header-v2">
-        <button class="tab-button-v2 active">검사 결과 보기</button>
-      </div>
+
 
       <div class="content-body-v2">
         <div class="test-result-layout-v2">

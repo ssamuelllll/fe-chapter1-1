@@ -4,9 +4,7 @@ export default function DashboardPage() {
   <div class='dashboard-container-v2'>
 
     <div class='main-content-v2'>
-      <div class='content-header-v2'>
-        <button class='tab-button-v2 active'>대시보드</button>
-      </div>
+
 
       <div class='content-body-v2'>
         <div class='alert-section-v2'>
